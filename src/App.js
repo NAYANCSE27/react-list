@@ -1,10 +1,7 @@
-import Input from './input/Input';
 import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const numbers = [1, 2, 3, 4, 5];
-
   const [inputarray, setInputarray] = useState([])
 
   const [inputdata, setInputdata] = useState({
@@ -24,7 +21,6 @@ function App() {
 
   return (
     <div className="App">
-      <Input numbers={numbers} />
       <input type="text" autoComplete='off' placeholder='Enter name' name='name' value={inputdata.name} onChange={changehandle} /> <br />
       <input type="text" autoComplete='off' placeholder='Enter fame' name='fame' value={inputdata.fame} onChange={changehandle} />
       <button onClick={changevalue}>Submit</button>
