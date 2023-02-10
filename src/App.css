@@ -54,8 +54,10 @@
 input{
   border: none;
   box-shadow: 0px 0px 10px rgba(67, 65, 65, .5);
+  min-width: 30%;
+  max-width: 70%;
   font-size: 1.2rem;
-  padding: 10px;
+  padding: 2vh 10%;
   margin: 2vh 5%;
   border-radius: 10px;
   outline: none;
@@ -79,6 +81,7 @@ button{
   border-radius: 200px;
   box-shadow: 0px 0px 10px rgba(67, 65, 65, .5);
   cursor: pointer;
+  padding: 1vh 5%;
 }
 
 table{
