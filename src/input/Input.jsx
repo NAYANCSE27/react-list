@@ -1,17 +1,17 @@
+import { useState } from "react";
 import "./Input.css";
 
 function Input(){
+    const [newMessage, setNewMessage] = useState('');
+    const [listMessage, setListMessage] = useState([]);
     return (
         <div className="input__value">
             <input
               type="text"
               autoComplete="off"
-              placeholder="Enter name"
-              name="name"
-              value={inputdata.name}
-              onChange={changehandle}
+              placeholder="Enter Activity"
             />
-            <button onClick={changevalue}>Submit</button>
+            <button>Add</button>
         </div>
     );
 }
