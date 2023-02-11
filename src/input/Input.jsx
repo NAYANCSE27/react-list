@@ -10,7 +10,7 @@ function Input(){
         setNewMessage(event.target.value);
     }
     function handleOnClick(){
-        setListMessage(newMessage);
+        setListMessage([...listMessage, newMessage]);
     }
 
     return (
