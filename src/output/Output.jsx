@@ -1,12 +1,13 @@
 import "./Output.css";
 
-function Output({ list }) {
+const Output = ({ listMessage, setListMessage }) => {
   return (
     <div className="table__value">
       <ul>
-        {list.map((info, ind) => {
-            return <li key={ind}>{info}</li>;
-          })
+        {
+          listMessage.map((message, index) =>(
+            <li key={index}>{message}</li>
+          ))
         }
       </ul>
     </div>

@@ -2,15 +2,15 @@ import { useState } from "react";
 import Output from "../output/Output";
 import "./Input.css";
 
-function Input(){
-    const [newMessage, setNewMessage] = useState('');
-    const [listMessage, setListMessage] = useState([]);
+const Input = (props) =>{
+    const {listMessage, setListMessage} = props;
+    const [message, setMessage] = useState("");
 
     function handleOnChange(event){
-        setNewMessage(event.target.value);
+        setMessage(event.target.value);
     }
     function handleOnClick(){
-        setListMessage([...listMessage, newMessage]);
+        setListMessage([...listMessage, message]);
     }
 
     return (
@@ -20,10 +20,9 @@ function Input(){
               autoComplete="off"
               placeholder="Enter Activity"
               onChange={handleOnChange}
+              required
             />
-            <button onClick={handleOnClick}>Add</button>
-
-            <Output list={listMessage}/>
+            <button onClick={handleOnClick} id="add">Add</button>
         </div>
     );
 }
