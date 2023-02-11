@@ -1,11 +1,14 @@
 import "./Output.css";
 
-function Output(){
+function Output({list}){
     return( 
       <div className="table__value">
-        list.map(function(item)
-          return (<li>{item}</li>);
-        )
+        {console.log(list)}
+        {
+          list.map((item) =>{
+            return <li>{item}</li>;
+          }
+        )}
       </div>
     );
 }
