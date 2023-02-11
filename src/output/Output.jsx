@@ -12,7 +12,6 @@ const Output = ({ listMessage, setListMessage }) => {
       </ul>
     </div>
   );
-  );
 }
 
 export default Output;
