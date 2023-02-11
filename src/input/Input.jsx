@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Output from "../output/Output";
+import { useState } from "react";
+import Output from "../output/Output";
 import "./Input.css";
 
 const Input = (props) =>{
